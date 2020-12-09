@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0" />
+    <title>Stencil Component Starter</title>
+    <!-- <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+      /> -->
+      <style>
+        body{
+          margin: 0;
+        }
+      </style>
+
+    <script type="module" src="/build/maps.esm.js"></script>
+    <script nomodule src="/build/maps.js"></script>
+  </head>
+  <body>
+    <i-map  style="
+    position: absolute;
+    
+    width: calc(100% - 0px);
+    height: calc(100% - 0px);
+    border: solid black 1px;
+    box-shadow: 1px 2px;
+   
+ 
+    text-align: center;
+    box-sizing: border-box;"
+    tile-layer="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" latitude="52.505" longitude="-2.09" scale=13 show-scale="true" icon-url="https://image.flaticon.com/icons/svg/194/194648.svg" icon-width="64" icon-height="64" show-default-marker="true" default-popup="Panda was THERE!" user-latitude="52.501" user-longitude="-2.091" user-icon-url="https://image.flaticon.com/icons/svg/1067/1067357.svg">
+    <leaflet-marker latitude="52.505" longitude="-2.06" icon-url="https://image.flaticon.com/icons/svg/194/194648.svg" icon-width="64" icon-height="64">
+    <!--   ... and THERE! -->
+    </leaflet-marker>
+    <leaflet-marker latitude="52.505" longitude="-2.12" icon-url="https://image.flaticon.com/icons/svg/194/194648.svg" icon-width="64" icon-height="64">
+    <!--   ... and THERE TOO! -->
+    </leaflet-marker>
+    <leaflet-circle latitude="52.505" longitude="-2.06" radius="3000" stroke="true" fill="true" fill-color="#F00" color="#F00">
+    </leaflet-circle>
+  </i-map>
+  </body>
+</html>
